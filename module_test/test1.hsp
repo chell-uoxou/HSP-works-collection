@@ -1,0 +1,25 @@
+#module gui_text gui
+
+    #modinit int a, int b, str c
+    	x = a
+    	y = b
+    	text = c
+    	
+    return
+
+	#define global GUITYPE_BOTTUN_DEFAULT	0 //default type
+	
+	#modfunc update
+		redraw 0
+		pos x,y
+		mes text
+		redraw 1
+	return
+#global
+
+/*========================================================================
+ *                                ‚¤‚ñ‚±
+ *========================================================================*/
+
+newmod bottun1, gui_text, 50, 50, "fuck"
+update bottun1
